@@ -10,7 +10,7 @@ public class breadtest {
 		SELECTMENU selectmenuMain = new SELECTMENU(); //선택 메뉴 불러오기
 		BREADSIZE breadsizeMain = new BREADSIZE(); //빵 수량 20개씩 채우고 수량 출력
 		addorder addOrderMain = new addorder(); //추가 주문 관련
-//		finish finishMain = new finish();
+		finish finishMain = new finish();
 		choice choiceMain = new choice();
 		
 		
