@@ -10,6 +10,7 @@ public class breadtest {
 	 public static void addOrderMain(SELECTMENU selectmenuMain) {
 	        addorder addOrderMain = new addorder(); // 추가 주문 관련
 	        addOrderMain.addorder(selectmenuMain); // SELECTMENU 객체 전달
+	        
 	    }
 	public static void main (String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -33,6 +34,7 @@ public class breadtest {
 				
 			case 2 : //빵 선택하기
 				choiceMain.Choice();
+				addOrderMain(selectmenuMain);
 				break;
 				
 			case 3 : //주문종료
