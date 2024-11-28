@@ -9,6 +9,7 @@ public class choice {
 			System.out.println("빵을 선택해주세요 : ");
 			int bread = scanner.nextInt();
 			scanner.nextLine();
+			
 
 	switch(bread) {
 	case 1: //샌드위치 선택
