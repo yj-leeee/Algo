@@ -2,39 +2,37 @@ package bread;
 import java.util.Stack;
 import java.util.Scanner;
 public class breadtest {
-	public static void finish() {
-		System.out.println("주문이 종료되었습니다. 안녕히 가십시오");
-	}
-	public static void addselect() {
-		System.out.println("이어서 주문하시겠습니까?\n1.네 \n2.아니요" );
-	}
+	
+	
 	public static void main (String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		SHOWMENU showmenu = new SHOWMENU(); //메뉴메서드 불러오기
-		SELECTMENU selectmenu = new SELECTMENU(); //선택 메뉴 불러오기
-		BREADSIZE breadsize = new BREADSIZE();
-//		BREADSIZE breadSizeInstance = new BREADSIZE();
-		
+		SHOWMENU showmenuMain = new SHOWMENU(); //메뉴메서드 불러오기
+		SELECTMENU selectmenuMain = new SELECTMENU(); //선택 메뉴 불러오기
+		BREADSIZE breadsizeMain = new BREADSIZE(); //빵 수량 20개씩 채우고 수량 출력
+		addorder addOrderMain = new addorder(); //추가 주문 관련
+//		finish finishMain = new finish();
+		choice choiceMain = new choice();
 		
 		
 	while(true){
-			showmenu.showmenu();
-			selectmenu.selectMenu();
+		showmenuMain.showmenu();
+			selectmenuMain.selectMenu();
 			int menu = scanner.nextInt();
 			scanner.nextLine();
 			
+			
 			switch(menu) { 
 			case 1: //남은 수량 보기
-				breadsize.breadSize();
+				breadsizeMain.breadSize();
 				
 				break;
 				
 			case 2 : //빵 선택하기
-				showmenu.showmenu();
+				showmenuMain.showmenu();
 				System.out.println("빵을 선택해주세요 : ");
 				int bread = scanner.nextInt();
 				scanner.nextLine();
-			//sdsd	
+			
 				switch(bread) {
 				case 1: //샌드위치 선택
 					System.out.println("샌드위치를 선택하셨습니다.");
@@ -42,7 +40,7 @@ public class breadtest {
 					int sandbread = scanner.nextInt();
 					scanner.nextLine();
 					System.out.println("샌드위치" + sandbread + "개 선택하였습니다."  );
-					addselect();
+					addorder.addorder();
 				break;
 				
 				case 2: //딸기케이크 선택
@@ -51,7 +49,7 @@ public class breadtest {
 					int cakebread = scanner.nextInt();
 					scanner.nextLine();
 					System.out.println("딸기케이크" + cakebread + "개 선택하였습니다." );
-					addselect();
+					addorder.addorder();
 				break;
 				
 				case 3: //튀김소보로 선택
@@ -60,7 +58,7 @@ public class breadtest {
 					int sobobread = scanner.nextInt();
 					scanner.nextLine();
 					System.out.println("튀김소보로" + sobobread + "개 선택하였습니다." );
-					addselect();
+					addorder.addorder();
 				break;
 				
 				case 4: //단팥빵 선택
@@ -69,7 +67,7 @@ public class breadtest {
 					int danbread = scanner.nextInt();
 					scanner.nextLine();
 					System.out.println("단팥빵" + danbread + "개 선택하였습니다." );
-					addselect();
+					addorder.addorder();
 				break;
 				
 				case 5: //피자빵 선택
@@ -78,12 +76,12 @@ public class breadtest {
 					int pizzabread = scanner.nextInt();
 					scanner.nextLine();
 					System.out.println("피자빵" + pizzabread + "개 선택하였습니다." );
-					addselect();
+					addorder.addorder();
 				break;
 				
 				}
 			case 3 : //주문종료
-				finish();
+				finish finishAddOrder = new finish();
 				
 				
 			}

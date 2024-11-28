@@ -3,8 +3,8 @@ package bread;
 import java.util.Stack;
 
 public class BREADSIZE {
-//	private int breadSizeArray[] = {1,2,3,4,5};
-	
+
+	//빵 수량 20개씩 채우고 수량 출력
 		public void breadSize() {
 		//20개까지 수량 채우기
 		int top = 1;
@@ -19,7 +19,7 @@ public class BREADSIZE {
 		
 		
 		//반복문 사용해서 스택 채우기 
-		for (int i = 0; i<breadSize; i++) { //재귀 사용 가능할 거 같은뎅
+		for (int i = 0; i<breadSize; i++) { //재귀 사용 가능할 거 같은뎅 > 더 길어서 반복문으로 하는게 나을듯
 			sand.push(i+1);
 			cake.push(i+1);
 			dan.push(i+1);
