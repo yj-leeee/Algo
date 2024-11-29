@@ -17,7 +17,8 @@
 
 ## 3. 과제 진행(추진 내용) 
 1. 다이어그램 작성
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/d28cb646-7dae-48be-9108-980890df56ba)
+
 
 
 2. 기술 스택 생각하기
