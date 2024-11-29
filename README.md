@@ -17,7 +17,8 @@
 
 ## 3. 과제 진행(추진 내용) 
 1. 다이어그램 작성
-<img width="689" alt="스크린샷 2024-11-26 오전 11 43 23" src="https://github.com/user-attachments/assets/4fff823b-6400-4a0f-b92e-990dad5aad0c">
+![Uploading image.png…]()
+
 
 2. 기술 스택 생각하기
    - 리스트 사용 : 대기열 구현시 필요
